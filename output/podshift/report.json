@@ -1,0 +1,44 @@
+{
+  "inputs": {
+    "repoRoot": "/Users/raymon.epping/Documents/VSC/MacOS_Environment/podshift_example",
+    "composePath": "/Users/raymon.epping/Documents/VSC/MacOS_Environment/podshift_example/docker-compose.yml"
+  },
+  "summary": {
+    "serviceCount": 1,
+    "services": [
+      {
+        "name": "web",
+        "hasBuild": true,
+        "hasImage": false,
+        "image": null,
+        "buildContext": "/Users/raymon.epping/Documents/VSC/MacOS_Environment/podshift_example",
+        "resolvedDockerfile": "/Users/raymon.epping/Documents/VSC/MacOS_Environment/podshift_example/Dockerfile",
+        "ports": [
+          "8080:8080"
+        ],
+        "volumes": [],
+        "env_file": [],
+        "environment": {},
+        "depends_on": null,
+        "healthcheck": null,
+        "restart": "unless-stopped",
+        "networks": null,
+        "extra_hosts": [],
+        "privileged": false,
+        "network_mode": null,
+        "pid": null,
+        "ipc": null,
+        "cap_add": [],
+        "cap_drop": [],
+        "security_opt": [],
+        "devices": []
+      }
+    ]
+  },
+  "findings": [],
+  "recommendation": {
+    "verdict": "GREEN",
+    "strategy": "podman-compose",
+    "rationale": []
+  }
+}

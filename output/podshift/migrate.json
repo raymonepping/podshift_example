@@ -1,0 +1,10 @@
+{
+  "generated": {
+    "podmanComposePath": "/Users/raymon.epping/Documents/VSC/MacOS_Environment/podshift_example/podman-compose.yml",
+    "migrationDocPath": "/Users/raymon.epping/Documents/VSC/MacOS_Environment/podshift_example/MIGRATION.md",
+    "envFiles": [],
+    "formatYaml": true,
+    "prettierConfig": null
+  },
+  "changes": []
+}
