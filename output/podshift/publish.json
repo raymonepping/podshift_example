@@ -1,0 +1,39 @@
+{
+  "image": "docker.io/repping/podshift-example-web",
+  "tag": "0.1.2",
+  "ref": "docker.io/repping/podshift-example-web:0.1.2",
+  "platforms": [
+    "linux/amd64",
+    "linux/arm64"
+  ],
+  "context": "/Users/raymon.epping/Documents/VSC/MacOS_Environment/podshift_example",
+  "file": "/Users/raymon.epping/Documents/VSC/MacOS_Environment/podshift_example/Containerfile",
+  "push": true,
+  "strategy": "podman-build-manifest",
+  "commands": [
+    {
+      "cmd": "podman",
+      "args": [
+        "build",
+        "--platform",
+        "linux/amd64,linux/arm64",
+        "--manifest",
+        "docker.io/repping/podshift-example-web:0.1.2",
+        "-f",
+        "/Users/raymon.epping/Documents/VSC/MacOS_Environment/podshift_example/Containerfile",
+        "/Users/raymon.epping/Documents/VSC/MacOS_Environment/podshift_example"
+      ]
+    },
+    {
+      "cmd": "podman",
+      "args": [
+        "manifest",
+        "push",
+        "--all",
+        "docker.io/repping/podshift-example-web:0.1.2",
+        "docker://docker.io/repping/podshift-example-web:0.1.2"
+      ]
+    }
+  ],
+  "primaryError": null
+}
