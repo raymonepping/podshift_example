@@ -1,5 +1,5 @@
 # Dockerfile
-FROM nginx:1.27-alpine
+FROM nginx:1.29-alpine
 
 # Copy a minimal site
 COPY ./site /usr/share/nginx/html
